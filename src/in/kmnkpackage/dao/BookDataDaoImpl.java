@@ -23,7 +23,7 @@ public class BookDataDaoImpl implements IBookDataDao {
 	}
 
 	@Override
-	public String deleteProductById() {
+	public String deleteProductById(Integer bid) {
 		// TODO Auto-generated method stub
 		return null;
 	}

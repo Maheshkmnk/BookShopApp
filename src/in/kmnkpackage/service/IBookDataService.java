@@ -1,9 +1,9 @@
-package in.kmnkpackage.dao;
+package in.kmnkpackage.service;
 
 import in.kmnkpackage.dto.BookData;
 
-public interface IBookDataDao {
-
+public interface IBookDataService {
+	
 	public BookData searchById(Integer bid);
 
 	public String createProduct(String bname, String bgeneres, String bookWriterName, String Language);
