@@ -6,6 +6,6 @@ RUN mvn clean package -DskipTests
 
 # Stage 2: Create a runtime image
 FROM openjdk:17.0.1-jdk-slim
-COPY --from=build /app/target/BookShopApp-0.0.1-SNAPSHOT.war bookshopapp.war
+COPY --from=build /app/target/BookShopApp-0.0.1-SNAPSHOT.war booksapp.war
 EXPOSE 9999
-ENTRYPOINT ["java", "-jar", "bookshopapp.war"]
+ENTRYPOINT ["java", "-jar", "booksapp.war"]
